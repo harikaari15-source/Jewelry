@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Jewelry - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">💎 Luxe Jewelry</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Collections</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="cart.html" class="cart-link">🛒 Cart <span id="cart-count">0</span></a></li>
+                </ul>
+                <div class="mobile-menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>We're here to help you find the perfect piece</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-page-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    
+                    <!-- Success Message -->
+                    <div id="successMessage" class="success-message">
+                        <strong>✓ Thank You!</strong> Your message has been sent successfully. We'll get back to you within 24 hours.
+                    </div>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required placeholder="John">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john.doe@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Please select</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="product">Product Information</option>
+                                <option value="custom">Custom Design</option>
+                                <option value="order">Order Status</option>
+                                <option value="appointment">Book Appointment</option>
+                                <option value="repair">Repair Service</option>
+                                <option value="returns">Returns & Exchanges</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferredContact">Preferred Contact Method *</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="preferredContact" value="email" checked>
+                                    Email
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="preferredContact" value="phone">
+                                    Phone
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="preferredContact" value="both">
+                                    Either
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget Range (Optional)</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under1000">Under $1,000</option>
+                                <option value="1000-3000">$1,000 - $3,000</option>
+                                <option value="3000-5000">$3,000 - $5,000</option>
+                                <option value="5000-10000">$5,000 - $10,000</option>
+                                <option value="over10000">Over $10,000</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" id="newsletter">
+                                Subscribe to our newsletter for exclusive offers and new arrivals
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="terms" id="terms" required>
+                                I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-container">
+                    <h2>Visit Our Showroom</h2>
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">📍</div>
+                            <div class="detail-content">
+                                <h3>Location</h3>
+                                <p>456 Diamond Avenue<br>New York, NY 10022</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">📞</div>
+                            <div class="detail-content">
+                                <h3>Phone</h3>
+                                <p>+1 (800) 555-LUXE<br>Monday - Saturday: 10am - 7pm</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">✉️</div>
+                            <div class="detail-content">
+                                <h3>Email</h3>
+                                <p>info@luxejewelry.com<br>support@luxejewelry.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">⏰</div>
+                            <div class="detail-content">
+                                <h3>Business Hours</h3>
+                                <p>Mon - Sat: 10:00 AM - 7:00 PM<br>Sunday: 12:00 PM - 5:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="appointment-box">
+                        <h3>Private Consultation</h3>
+                        <p>Schedule a one-on-one appointment with our jewelry experts for personalized service.</p>
+                        <a href="#" class="btn btn-secondary btn-full">Book Appointment</a>
+                    </div>
+
+                    <div class="social-connect">
+                        <h3>Connect With Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">Facebook</a>
+                            <a href="#" class="social-icon">Instagram</a>
+                            <a href="#" class="social-icon">Pinterest</a>
+                            <a href="#" class="social-icon">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Do you offer custom jewelry design?</h3>
+                    <p>Yes! Our expert designers will work with you to create a one-of-a-kind piece that reflects your vision and style.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is your return policy?</h3>
+                    <p>We offer a 30-day return policy on all purchases. Items must be in original condition with all documentation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you provide jewelry appraisals?</h3>
+                    <p>Yes, we offer complimentary appraisals for all jewelry purchased from Luxe Jewelry.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I have my jewelry resized?</h3>
+                    <p>Absolutely! We offer complimentary resizing within 60 days of purchase for rings bought from us.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer financing options?</h3>
+                    <p>Yes, we partner with leading financial institutions to offer flexible payment plans for qualified customers.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I care for my jewelry?</h3>
+                    <p>We provide care instructions with every purchase and offer complimentary cleaning services at our showroom.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About Luxe Jewelry</h4>
+                    <p>Crafting timeless pieces that celebrate life's precious moments since 1995.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Collections</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Pinterest</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxe Jewelry. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
