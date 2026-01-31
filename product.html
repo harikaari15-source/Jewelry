@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Jewelry - Collections</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">💎 Luxe Jewelry</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Collections</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-link">🛒 Cart <span id="cart-count">0</span></a></li>
+                </ul>
+                <div class="mobile-menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Collections</h1>
+            <p>Discover exquisite pieces crafted with passion and precision</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active" onclick="filterProducts('all')">All</button>
+                <button class="filter-btn" onclick="filterProducts('rings')">Rings</button>
+                <button class="filter-btn" onclick="filterProducts('necklaces')">Necklaces</button>
+                <button class="filter-btn" onclick="filterProducts('earrings')">Earrings</button>
+                <button class="filter-btn" onclick="filterProducts('bracelets')">Bracelets</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Rings -->
+                <div class="product-card" data-category="rings">
+                    <div class="product-badge">Bestseller</div>
+                    <div class="product-image">💍</div>
+                    <div class="product-info">
+                        <h3>Diamond Solitaire Ring</h3>
+                        <p class="product-category">Engagement Rings</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="price">$2,499</div>
+                        <button class="btn btn-cart" onclick="addToCart('Diamond Solitaire Ring', 2499)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="rings">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">💍</div>
+                    <div class="product-info">
+                        <h3>Rose Gold Engagement Ring</h3>
+                        <p class="product-category">Engagement Rings</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="price">$3,299</div>
+                        <button class="btn btn-cart" onclick="addToCart('Rose Gold Engagement Ring', 3299)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="rings">
+                    <div class="product-image">💍</div>
+                    <div class="product-info">
+                        <h3>Emerald Cut Diamond Ring</h3>
+                        <p class="product-category">Engagement Rings</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="price">$4,599</div>
+                        <button class="btn btn-cart" onclick="addToCart('Emerald Cut Diamond Ring', 4599)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="rings">
+                    <div class="product-image">💍</div>
+                    <div class="product-info">
+                        <h3>Vintage Wedding Band</h3>
+                        <p class="product-category">Wedding Bands</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="price">$799</div>
+                        <button class="btn btn-cart" onclick="addToCart('Vintage Wedding Band', 799)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Necklaces -->
+                <div class="product-card" data-category="necklaces">
+                    <div class="product-badge">Bestseller</div>
+                    <div class="product-image">📿</div>
+                    <div class="product-info">
+                        <h3>Pearl Pendant Necklace</h3>
+                        <p class="product-category">Necklaces</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="price">$899</div>
+                        <button class="btn btn-cart" onclick="addToCart('Pearl Pendant Necklace', 899)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="necklaces">
+                    <div class="product-image">📿</div>
+                    <div class="product-info">
+                        <h3>Diamond Tennis Necklace</h3>
+                        <p class="product-category">Necklaces</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="price">$5,499</div>
+                        <button class="btn btn-cart" onclick="addToCart('Diamond Tennis Necklace', 5499)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="necklaces">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">📿</div>
+                    <div class="product-info">
+                        <h3>Heart Locket Necklace</h3>
+                        <p class="product-category">Necklaces</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="price">$649</div>
+                        <button class="btn btn-cart" onclick="addToCart('Heart Locket Necklace', 649)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="necklaces">
+                    <div class="product-image">📿</div>
+                    <div class="product-info">
+                        <h3>Sapphire Pendant</h3>
+                        <p class="product-category">Necklaces</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="price">$1,199</div>
+                        <button class="btn btn-cart" onclick="addToCart('Sapphire Pendant', 1199)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Earrings -->
+                <div class="product-card" data-category="earrings">
+                    <div class="product-image">👂</div>
+                    <div class="product-info">
+                        <h3>Gold Stud Earrings</h3>
+                        <p class="product-category">Earrings</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="price">$599</div>
+                        <button class="btn btn-cart" onclick="addToCart('Gold Stud Earrings', 599)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="earrings">
+                    <div class="product-badge">Sale</div>
+                    <div class="product-image">👂</div>
+                    <div class="product-info">
+                        <h3>Diamond Drop Earrings</h3>
+                        <p class="product-category">Earrings</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="price">$1,799 <span class="old-price">$2,199</span></div>
+                        <button class="btn btn-cart" onclick="addToCart('Diamond Drop Earrings', 1799)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="earrings">
+                    <div class="product-image">👂</div>
+                    <div class="product-info">
+                        <h3>Pearl Hoop Earrings</h3>
+                        <p class="product-category">Earrings</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="price">$749</div>
+                        <button class="btn btn-cart" onclick="addToCart('Pearl Hoop Earrings', 749)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="earrings">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">👂</div>
+                    <div class="product-info">
+                        <h3>Emerald Stud Earrings</h3>
+                        <p class="product-category">Earrings</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="price">$999</div>
+                        <button class="btn btn-cart" onclick="addToCart('Emerald Stud Earrings', 999)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Bracelets -->
+                <div class="product-card" data-category="bracelets">
+                    <div class="product-badge">Sale</div>
+                    <div class="product-image">💎</div>
+                    <div class="product-info">
+                        <h3>Sapphire Bracelet</h3>
+                        <p class="product-category">Bracelets</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="price">$1,299 <span class="old-price">$1,599</span></div>
+                        <button class="btn btn-cart" onclick="addToCart('Sapphire Bracelet', 1299)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bracelets">
+                    <div class="product-image">💎</div>
+                    <div class="product-info">
+                        <h3>Diamond Tennis Bracelet</h3>
+                        <p class="product-category">Bracelets</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="price">$3,999</div>
+                        <button class="btn btn-cart" onclick="addToCart('Diamond Tennis Bracelet', 3999)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bracelets">
+                    <div class="product-image">💎</div>
+                    <div class="product-info">
+                        <h3>Gold Charm Bracelet</h3>
+                        <p class="product-category">Bracelets</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="price">$899</div>
+                        <button class="btn btn-cart" onclick="addToCart('Gold Charm Bracelet', 899)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bracelets">
+                    <div class="product-badge">Bestseller</div>
+                    <div class="product-image">💎</div>
+                    <div class="product-info">
+                        <h3>Ruby Bangle</h3>
+                        <p class="product-category">Bracelets</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="price">$1,599</div>
+                        <button class="btn btn-cart" onclick="addToCart('Ruby Bangle', 1599)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About Luxe Jewelry</h4>
+                    <p>Crafting timeless pieces that celebrate life's precious moments since 1995.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Collections</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Pinterest</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxe Jewelry. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
