@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Jewelry - Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">💎 Luxe Jewelry</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Collections</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-link active">🛒 Cart <span id="cart-count">0</span></a></li>
+                </ul>
+                <div class="mobile-menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            <p>Review your selected items</p>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-container">
+                <!-- Cart Items -->
+                <div class="cart-items-container">
+                    <h2>Your Items</h2>
+                    <div id="cartItems">
+                        <!-- Cart items will be dynamically inserted here -->
+                        <div class="empty-cart">
+                            <div class="empty-cart-icon">🛍️</div>
+                            <h3>Your cart is empty</h3>
+                            <p>Start adding beautiful jewelry to your collection</p>
+                            <a href="products.html" class="btn btn-primary">Continue Shopping</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span id="shipping">FREE</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax (8%):</span>
+                        <span id="tax">$0.00</span>
+                    </div>
+                    <hr>
+                    <div class="summary-row total-row">
+                        <span><strong>Total:</strong></span>
+                        <span id="total"><strong>$0.00</strong></span>
+                    </div>
+
+                    <div class="promo-code">
+                        <input type="text" id="promoCode" placeholder="Enter promo code">
+                        <button class="btn btn-secondary btn-small" onclick="applyPromo()">Apply</button>
+                    </div>
+
+                    <button class="btn btn-primary btn-full" onclick="proceedToCheckout()">Proceed to Checkout</button>
+                    <a href="products.html" class="continue-shopping">← Continue Shopping</a>
+
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <span>🔒</span>
+                            <small>Secure Checkout</small>
+                        </div>
+                        <div class="trust-badge">
+                            <span>🚚</span>
+                            <small>Free Shipping</small>
+                        </div>
+                        <div class="trust-badge">
+                            <span>↩️</span>
+                            <small>Easy Returns</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Products -->
+    <section class="recommended-section">
+        <div class="container">
+            <h2 class="section-title">You May Also Like</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">💍</div>
+                    <div class="product-info">
+                        <h3>Diamond Eternity Band</h3>
+                        <p class="product-category">Wedding Bands</p>
+                        <div class="price">$1,899</div>
+                        <button class="btn btn-cart" onclick="addToCart('Diamond Eternity Band', 1899)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">📿</div>
+                    <div class="product-info">
+                        <h3>Gold Chain Necklace</h3>
+                        <p class="product-category">Necklaces</p>
+                        <div class="price">$749</div>
+                        <button class="btn btn-cart" onclick="addToCart('Gold Chain Necklace', 749)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">💎</div>
+                    <div class="product-info">
+                        <h3>Silver Cuff Bracelet</h3>
+                        <p class="product-category">Bracelets</p>
+                        <div class="price">$449</div>
+                        <button class="btn btn-cart" onclick="addToCart('Silver Cuff Bracelet', 449)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">👂</div>
+                    <div class="product-info">
+                        <h3>Crystal Drop Earrings</h3>
+                        <p class="product-category">Earrings</p>
+                        <div class="price">$299</div>
+                        <button class="btn btn-cart" onclick="addToCart('Crystal Drop Earrings', 299)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About Luxe Jewelry</h4>
+                    <p>Crafting timeless pieces that celebrate life's precious moments since 1995.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Collections</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Pinterest</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxe Jewelry. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
